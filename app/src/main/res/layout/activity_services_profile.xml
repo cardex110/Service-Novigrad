@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Services_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Services offered by the branch"
+            android:textColor="#EC1414"
+            android:textSize="24sp" />
+
+        <ListView
+            android:id="@+id/ListPossibleServices"
+            android:layout_width="match_parent"
+            android:layout_height="381dp">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="(Click on a service to delete it from profile)"
+            android:textColor="#3135DD"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonDialogAdd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Add services" />
+
+    </LinearLayout>
+
+</RelativeLayout>

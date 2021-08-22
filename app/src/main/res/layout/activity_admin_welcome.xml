@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Services offered"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/listServices"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/textView3">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/nameService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listServices"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Service's name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/formService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameService"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter form required"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/documentsService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formService"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter documents required"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/rateService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/documentsService"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter rate"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/addServiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rateService"
+        android:layout_centerHorizontal="true"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addServiceButton"
+        android:layout_centerHorizontal="true"
+        android:text="(Long click on the list to edit or delete a service)" />
+
+
+    <Button
+        android:id="@+id/deleteAccountButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Delete Accounts" />
+
+
+</RelativeLayout>
